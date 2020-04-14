@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.input {
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    line-height: 24px;
+    background-position: left 10px center;
+    padding: 8px 10px;
+    padding-left: 32px;
+}
+
+.input-address {
+    flex: 0.8;
+    background-image: url('../img/home.svg');
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    font-size: 16px;
+    line-height: 24px;
+    background: #FFFFFF;
+    color: #595959;
+    box-sizing: border-box;
+}
+
+.button-login {
+    background: #1890FF;
+    border: 1px solid #1890FF;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.button-image {
+    margin-right: 5px;
+}
+
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    padding-bottom: 50px;
+}
+
+.promo {
+    color: #302C34;
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: #FFF1B8 url("../img/burger.png") no-repeat top right -200px / 700px;
+    border-radius: 10px;
+    padding: 65px 70px;
+    margin-bottom: 56px;
+}
+
+.promo-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 46px;
+    margin-bottom: 15px;
+}
+
+.promo-text {
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 540px;
+    margin: 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 42px; 
+    margin: 0; 
+}
+
+.input-restaurants {
+    margin-left: auto;
+    width: 300px;
+    background-image: url('../img/search.svg');
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    flex-basis: 32%;
+}
+
+.card-img {
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+    min-height: 250px;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.card-content {
+    padding: 20px 24px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.card-tag {
+    background: #262626;
+    border-radius: 2px;
+    padding: 1px 8px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    color: #8C8C8C;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.card-rating {
+    color: #FFC107;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.card-price {
+    margin-right: 10px;
+}
+
+.card-price:after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #8C8C8C;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer {
+    padding: 30px 0;
+}
+
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    margin-right: 36px;
+}
+
+.footer-nav {
+    margin-right: auto;
+}
+
+.footer-link {
+    display: inline-block;
+    color: #595959;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.footer-link:not(:last-child) {
+    margin-right: 15px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 21px;
+}
+
+.restaurant-title {
+    margin-right: 30px;
+}
+
+.product-title {
+    font-weight: normal;
+    line-height: 26px;
+}
+
+.card-recipe {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.purchase {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-price {
+    display: inline-block;
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.product-button-img {
+    margin-left: 4px;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    display: none;
+}
+
+.modal-dialog {
+    width: 60%;
+    max-width: 780px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px 45px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.close {
+    font-size: 54px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin-bottom: 52px;
+}
+
+.food-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.food-name {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.food-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.food-price {
+    margin-left: auto;
+    margin-right: 47px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.food-counter {
+    display: flex;
+    align-items: center;
+}
+
+.button-counter {
+    cursor: pointer;
+    width: 39px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #40A9FF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #40A9FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-counter:active {
+    background: rgb(203, 230, 252);
+}
+
+.counter {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.modal-price {
+    background: #262626;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: bold;
+    color: #FAFAFA;
+    padding: 15px 20px;
+}
+
+.active {
+    display: flex;
+}
+
+@media (max-width: 1366px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        background-size: 600px;
+    }
+    .card-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .promo {
+        padding: 40px;
+        background-size: 500px;
+    }
+    .promo-title {
+        font-size: 36px;
+        line-height: 42px; 
+    }
+    .promo-text {
+        font-size: 22px;
+        line-height: 28px;
+        max-width: 450px;
+    }
+    .card-content {
+        padding: 18px;
+    }
+    .card-info {
+        font-size: 16px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .footer-link {
+        font-size: 16px;
+    }
+    .modal-dialog {
+        width: 70%;
+    }
+}
+
+@media (max-width: 788px) {
+    .container {
+        max-width: 550px;
+    }
+    .card {
+        flex-basis: 47%;
+    }
+    .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-link {
+        flex-basis: 40%;
+    }
+    .promo {
+        padding: 35px;
+        background-size: 400px;
+    }
+    .modal-dialog {
+        width: 90%;
+    }
+    .food-price {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .container {
+        max-width: 90%;
+    }
+    .header {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .button {
+        font-size: 12px;
+        line-height: 20px;
+        padding: 4px 8px;
+    }
+    .input-address {
+        order: 5;
+        margin-top: 15px;
+        flex: 1;
+    }
+    .promo {
+        background-image: none;
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+    .promo-title, .section-title {
+        line-height: 32px;
+        font-size: 28px;
+    }
+    .promo-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .section-header {
+        margin-bottom: 25px;
+    }
+    .card {
+        flex-basis: 85%;
+        margin: 10px auto;
+    }
+    .card-img {
+        width: 100%;
+    }
+    .section-header {
+        flex-wrap: wrap;
+    }
+    .input-restaurants {
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+    .footer-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        align-items: flex-end;
+    }
+    .footer-link:not(:last-child) {
+        margin-right: 0;
+    }
+    .social-links {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .modal-dialog {
+        width: 95%;
+        padding: 10px 20px;
+    }
+    .modal-header {
+        margin-bottom: 25px;
+    }
+    
+    .modal-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    
+    .close {
+        font-size: 48px;
+    }
+    
+    .modal-body {
+        margin-bottom: 30px;
+    }
+
+    .modal-price {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 7px;
+        border-radius: 3px;
+    }
+
+    .food-row {
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .food-name {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .food-price {
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 15px;
+    }
+
+    .food-info {
+        flex-direction: column;
+    }
+    
+    .button-counter {
+        width: 25px;
+        height: 25px;
+    }
+ }
