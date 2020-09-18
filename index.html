@@ -6,19 +6,20 @@
     <title>Delivery Food</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <a href="/index.html"><img src="./img/logo.svg" alt="logo" class="logo"></a>
+            <a href="index.html"><img src="./img/logo.svg" alt="logo" class="logo"></a>
             <input type="text" class="input input-address" placeholder="Адрес доставки">
             <div class="buttons">
                 <button class="button button-login">
                     <img src="./img/person.svg" alt="" class="button-image">
                     <span class="button-text">Войти</span>
                 </button>
-                <button class="button">
+                <button class="button" id="cart-button">
                     <img src="./img/cart.svg" alt="" class="button-image">
                     <span class="button-text">Корзина</span>
                 </button>
@@ -43,7 +44,7 @@
                         <img src="./img/card-1.png" alt="card" class="card-img">
                         <div class="card-content">
                             <div class="card-header">
-                                <a class="card-title" href="/restaurant.html">Пицца плюс</a>
+                                <a class="card-title" href="restaurant.html">Пицца плюс</a>
                                 <span class="card-tag tag">50 мин</span>
                             </div>
                             <div class="card-info">
@@ -61,7 +62,7 @@
                         <img src="./img/card-2.png" alt="card" class="card-img">
                         <div class="card-content">
                             <div class="card-header">
-                                <a class="card-title" href="/restaurant.html">Тануки</a>
+                                <a class="card-title" href="restaurant.html">Тануки</a>
                                 <span class="card-tag tag">50 мин</span>
                             </div>
                             <div class="card-info">
@@ -79,7 +80,7 @@
                         <img src="./img/card-3.png" alt="card" class="card-img">
                         <div class="card-content">
                             <div class="card-header">
-                                <a class="card-title" href="/restaurant.html">FoodBand</a>
+                                <a class="card-title" href="restaurant.html">FoodBand</a>
                                 <span class="card-tag tag">50 мин</span>
                             </div>
                             <div class="card-info">
@@ -97,7 +98,7 @@
                         <img src="./img/card-4.png" alt="card" class="card-img">
                         <div class="card-content">
                             <div class="card-header">
-                                <a class="card-title" href="/restaurant.html">Жадина-пицца</a>
+                                <a class="card-title" href="restaurant.html">Жадина-пицца</a>
                                 <span class="card-tag tag">50 мин</span>
                             </div>
                             <div class="card-info">
@@ -115,7 +116,7 @@
                         <img src="./img/card-5.png" alt="card" class="card-img">
                         <div class="card-content">
                             <div class="card-header">
-                                <a class="card-title" href="/restaurant.html">Точка еды</a>
+                                <a class="card-title" href="restaurant.html">Точка еды</a>
                                 <span class="card-tag tag">50 мин</span>
                             </div>
                             <div class="card-info">
@@ -133,7 +134,7 @@
                         <img src="./img/card-6.png" alt="card" class="card-img">
                         <div class="card-content">
                             <div class="card-header">
-                                <a class="card-title" href="/restaurant.html">PizzaBurger</a>
+                                <a class="card-title" href="restaurant.html">PizzaBurger</a>
                                 <span class="card-tag tag">50 мин</span>
                             </div>
                             <div class="card-info">
@@ -170,5 +171,80 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="close" id="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <div class="food-info">
+                        <strong class="food-price">250 ₽</strong>
+                        <div class="food-counter">
+                            <button class="button-counter button-less">-</button>
+                            <span class="counter">1</span>
+                            <button class="button-counter button-more">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <div class="food-info">
+                        <strong class="food-price">250 ₽</strong>
+                        <div class="food-counter">
+                            <button class="button-counter button-less">-</button>
+                            <span class="counter">1</span>
+                            <button class="button-counter button-more">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <div class="food-info">
+                        <strong class="food-price">250 ₽</strong>
+                        <div class="food-counter">
+                            <button class="button-counter button-less">-</button>
+                            <span class="counter">1</span>
+                            <button class="button-counter button-more">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <div class="food-info">
+                        <strong class="food-price">250 ₽</strong>
+                        <div class="food-counter">
+                            <button class="button-counter button-less">-</button>
+                            <span class="counter">1</span>
+                            <button class="button-counter button-more">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <div class="food-info">
+                        <strong class="food-price">250 ₽</strong>
+                        <div class="food-counter">
+                            <button class="button-counter button-less button-less">-</button>
+                            <span class="counter">1</span>
+                            <button class="button-counter button-more">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="modal-price">1000 ₽</span>
+                <div class="footer-buttons">
+                    <button class="button button-login" id="close">Оформить заказ</button>
+                    <button class="button" id="close">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
